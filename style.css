@@ -200,11 +200,7 @@ header img{
 .projects{
     position: relative;
     display: flex;
-    align-items: center;
     gap: 25px;
-}
-.projects-content{
-    width: 50%;
 }
 
 .projects-content h3{
@@ -236,7 +232,7 @@ header img{
 
 .projects-content p{
     color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .projects-content .btn{
