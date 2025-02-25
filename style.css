@@ -27,11 +27,11 @@ body {
 }
 
 .btn:hover {
-    background-color: rgb(23, 38, 235);
+    background-color: rgb(24, 38, 230);
 }
 
 .btn a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
