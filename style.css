@@ -21,7 +21,7 @@ body {
     background-color: rgb(36, 40, 54);
     cursor: pointer;
     border-radius: 50px;
-    border: 0.1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.308);
     transition: all 0.3s ease;
     gap: 0.5rem;
 }
@@ -48,7 +48,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
 }
 
 .nav-links {
@@ -56,11 +55,12 @@ nav {
     justify-content: center;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 2rem;
     margin: 5px;
 }
 
 .link a {
+    font-size: 1.4rem;
     position: relative;
     color: white;
     text-decoration: none;
@@ -82,10 +82,11 @@ nav {
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 5rem 2rem;
-}
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
 .blur {
     position: absolute;
@@ -94,13 +95,10 @@ nav {
     top: 230;
 }
 
-header {
-    position: relative;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 4rem;
+/* Header */
+
+header .content{
+    margin-top: 80px;
 }
 
 header .content h1 {
@@ -118,7 +116,7 @@ header .content h1 span{
 
 header .content p {
     color: #ccc;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
 }
 
@@ -127,23 +125,22 @@ header .content .social {
     gap: 1rem;
 }
 
-header .image img{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
     border-radius: 50%;
-    width: 300px;
 }
 
+/* Experience Section */
 
 .experienceSection {
-    margin: 50px auto;
+    margin: 100px auto;
   }
   
   .experienceSection h2 {
     color: white;
-    font-size: white;
+    font-size: 2rem;
     margin-bottom: 30px;
   }
   
@@ -160,6 +157,7 @@ header .image img{
 }
 
 .experienceItemList{
+    font-size: 1.25rem;
     padding-left: 20px;
     padding-bottom: 40px;
 }   
@@ -187,14 +185,11 @@ header .image img{
 
 }
 
-.projectsSection {
-    margin: 50px auto;
-    justify-content: center;
-}
+/* Projects */
 
 .projectsSection h2 {
     color: white;
-    font-size: white;
+    font-size: 2rem;
     margin-bottom: 30px;
   }
   
@@ -202,14 +197,60 @@ header .image img{
     width: 20px;
     height: 20px;
 }
-
-.projectsList{
-    border-inline-start: 1px solid #fff;
+.projects{
     position: relative;
-    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.projects-content{
+    width: 50%;
 }
 
-.projectsItemList{
-    padding-left: 20px;
-    padding-bottom: 40px;
-}   
+.projects-content h3{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.lenguages .html{
+    background-color: #f16529;
+    padding: 4px 10px;
+}
+.lenguages .react{
+    background-color: #2965f1;
+    padding: 4px 10px;
+}
+.lenguages .tailwind{
+    background-color: #0b661a;
+    padding: 4px 10px;
+}
+
+.lenguages, .html, .react, .tailwind{ 
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.projects-content p{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.projects-content .btn{
+    border-radius: 10px;
+}
+
+.projects-images img{
+    width: 360px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+
+
+
